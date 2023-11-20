@@ -37,7 +37,7 @@ a {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 button {
   cursor: pointer;
@@ -184,10 +184,7 @@ body {
 
 .container-list {
   display: flex;
-  width: 264px;
-  padding-bottom: 0px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 72px;
 }
@@ -708,6 +705,8 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+ 
   .mobile-close-btn:hover,
   .mobile-close-btn:focus {
     background-color: #404bbf;
@@ -741,6 +740,9 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
   .mobile-menu-link:focus {
     color: #404bbf;
   }
+  .link-mobile {
+    color: #404bbf;
+  }
   .mobile-contact-list {
     display: inline-flex;
     flex-direction: column;
@@ -752,6 +754,7 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
     color: #434455;
     font-size: 20px;
     font-weight: 500;
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
@@ -781,14 +784,14 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
 }
 @media screen and (min-width: 320px) {
   .container {
-    width: 288px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   /*========  HEADER TABLET STYLES ========= */
   .logotype {
@@ -882,7 +885,7 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
 
   /*========= SECTION OPTION TABLET STYLES =========*/
   .list {
-    gap: 24px;
+    gap: 72px 24px;
   }
   .subtitle {
     text-align: start;
@@ -894,11 +897,11 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
   /*========= /SECTION OPTION TABLET STYLES =========*/
   /*========  SECTION OUR TEAM TABLET STYLES ========= */
   .container-list {
-    width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
+    justify-content: center;
   }
   /*========  /SECTION OUR TEAM TABLET STYLES ========= */
   /*========  SECTION PORTFOLIO TABLET STYLES ========= */
@@ -921,9 +924,12 @@ screen and (min-device-pexel-ratio: 2) and (max-width:767px) {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    width: 584px;
+    max-width: 584px;
   }
   .footer-link-content {
+    margin-bottom: 0;
+  }
+  .again-footer {
     margin-bottom: 0;
   }
   .footer-link {
@@ -977,7 +983,7 @@ screen and (min-device-pexel-ratio: 2) and (min-width: 768px) {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
   .logotype {
     margin-right: 76px;
@@ -1043,7 +1049,7 @@ screen and (min-device-pexel-ratio: 2) and (min-width: 768px) {
   /*========= SECTION OPTION DESKTOP STYLES =========*/
   /*========= SECTION OUR TEAM STYLES =========*/
   .container-list {
-    width: 1158px;
+  flex-wrap: nowrap;
   }
   /*========= /SECTION OUR TEAM STYLES =========*/
   /*========= SECTION PORTFOLIO STYLES =========*/
@@ -1064,6 +1070,8 @@ screen and (min-device-pexel-ratio: 2) and (min-width: 768px) {
   }
   .footer-content {
     flex-wrap: nowrap;
+    margin-left: auto;
+    column-gap: 0;
   } 
   /*========= SECTION /FOOTER STYLES =========*/
 
