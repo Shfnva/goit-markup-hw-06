@@ -982,6 +982,10 @@ screen and (min-device-pexel-ratio: 2) and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1158px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .container {
     max-width: 1158px;
   }
